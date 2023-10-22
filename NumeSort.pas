@@ -18,16 +18,15 @@ begin
     if (Ord(input1[i]) < Ord(input2[i])) then
     begin
       swap := True;
-      Exit; // Exit the function early if the condition is met
+      Exit; 
     end
     else if Ord(input1[i]) > Ord(input2[i]) then
     begin
       swap := False;
-      Exit; // Exit the function early if the condition is met
+      Exit; 
     end;
   end;
 
-  // If all characters are equal, compare the lengths
   if input1.Length < input2.Length then
     swap := True
   else
@@ -77,7 +76,6 @@ begin
   begin
     if swap(fete[j], fete[j+1]) then
     begin
-      // Swap the elements
       temp := fete[j];
       fete[j] := fete[j + 1];
       fete[j + 1] := temp;
@@ -97,7 +95,6 @@ begin
   begin
     if swap(baieti[j], baieti[j+1]) then
     begin
-      // Swap the elements
       temp := baieti[j];
       baieti[j] := baieti[j + 1];
       baieti[j + 1] := temp;
